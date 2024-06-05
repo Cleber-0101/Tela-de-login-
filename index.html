@@ -2,27 +2,29 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User login</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!--Tudo que aparece para o usuario-->
-    <div class="container" >
+    <div class="container">
         <h2>&lt;Faça seu login&gt;</h2>
-            <form action="">
-                <label for="">email</label>
-                <input type="email" placeholder="Digite seu email">
+        <form id="loginForm">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Digite seu email" required>
 
-                <label for="">Senha</label>
-                <input type="password" placeholder="Digite sua senha">
-                <a href="#">entrar</a>
-            </form>
+            <label for="password">Senha</label>
+            <input type="password" id="password" placeholder="Digite sua senha" required>
+            
+            <button type="submit">Entrar</button>
+        </form>
 
-              <div class="link">
-                Não tem cadastro ? <a href="#">Faça o cadastro</a>
-              </div>  
+        <div class="link">
+            Não tem cadastro? <a href="#">Cadastre-se</a>
+        </div>
 
+        <p id="message"></p>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
